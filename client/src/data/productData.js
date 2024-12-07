@@ -6,7 +6,7 @@
         price: 199.99,
         category: "Yoga Accessories",
         stock: 50,
-        image: "/images/yoga_strap.jpg",
+        image: "/images/smart_yoga_mat.jpeg",
       },
       {
         id: "2",
@@ -14,7 +14,7 @@
         price: 129.99,
         category: "Wearable Tech",
         stock: 120,
-        image: "/images/yoga_strap.jpg",
+        image: "/images/watch.jpeg",
       },
       {
         id: "3",
@@ -22,7 +22,7 @@
         price: 29.99,
         category: "Fitness Equipment",
         stock: 200,
-        image: "/images/yoga_strap.jpg",
+        image: "/images/band.jpeg",
       }
     ]
     export default products;

@@ -4,20 +4,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto;
+    margin: 40px;
+    margin-left: 500px;
     padding: 20px;
     max-width: 600px;
+    height: 500px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
 }
 
-.product-details-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .product-details-container h1 {

@@ -5,8 +5,11 @@ import "./Product.css";
 
 const Product = () => {
     return (
-        <div>
-            <div className="products-container">
+        <div className="products-container">
+            <Link to={'/addproduct'}>
+                <button className='add-button'>Add Product</button>
+            </Link>
+            <div className='product-contain'>
                 {products.map((product) => (
                     <div key={product.id} className="product-card">
                         <img src={product.image} alt={product.name} className="product-image" />

@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import Product from './pages/Product/Product';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import "./App.css"
 
 const App = () => {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false); // Sidebar state
