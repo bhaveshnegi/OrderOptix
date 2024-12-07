@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .header-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .header .header-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header .header-icons i {
+    font-size: 1.5rem;
+    color: #004aad;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .header .header-icons i:hover {
+    color: #003c8f;
+  }

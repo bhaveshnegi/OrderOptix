@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './components/Sidebar/Sidebar';
+import Header from './components/Header/Header';
 
-function App() {
+const App = () => {
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false); // Sidebar state
+
+  const toggleSidebar = () => {
+    setIsSidebarCollapsed(!isSidebarCollapsed); // Toggle the sidebar state
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Sidebar isCollapsed={isSidebarCollapsed} toggleSidebar={toggleSidebar} />
+        <div className="main-content">
+          <Header toggleSidebar={toggleSidebar} />
+          <Routes>
+            {/* <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/products" element={<ProductList />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/fleet" element={<FleetManagement />} />
+            <Route path="/crm" element={<CRM />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/" element={<Login />} /> */}
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
