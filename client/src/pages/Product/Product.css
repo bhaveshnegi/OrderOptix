@@ -29,7 +29,7 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center; /* Center product cards */
-    margin-top: 60px; /* Add space to avoid overlapping with button */
+    margin-top: 30px; /* Add space to avoid overlapping with button */
 }
 
 .product-card {
