@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import Product from './pages/Product/Product';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import AddProduct from './components/AddProduct/AddProduct';
 import "./App.css"
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Routes>
           <Route path="/products" element={<Product />} />
           <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/addproduct" element={<AddProduct />} />
             {/* <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/fleet" element={<FleetManagement />} />
